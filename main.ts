@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// news-image-20261119 — reconstructs entry.png from entry.png.b64 (Node 22, stdlib only).
+// news-image-20261119 v2 — reconstructs entry.png from entry.png.b64 (Node 22, stdlib only).
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";

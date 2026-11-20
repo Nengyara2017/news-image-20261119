@@ -8,148 +8,146 @@
   html, body { width: 1024px; height: 1024px; }
   body {
     font-family: Georgia, 'Times New Roman', serif;
-    background: #f6f1e5;
-    color: #1a1a1a;
+    background: #f7f2e6;
+    color: #191919;
   }
-  .page {
+  .sheet {
     width: 1024px; height: 1024px;
-    padding: 22px 30px 16px 30px;
+    padding: 16px 28px 12px 28px;
     display: flex; flex-direction: column;
   }
-  /* Masthead */
-  .masthead {
+  /* Header */
+  .title {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 48px;
     letter-spacing: 1px;
-    line-height: 1.05;
-    color: #111111;
+    line-height: 1.02;
+    color: #101010;
   }
-  .dateline {
+  .date {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 1px;
     color: #a4121f;
-    margin-top: 6px;
+    margin-top: 4px;
   }
-  .rule-double {
-    border-top: 4px solid #111111;
-    border-bottom: 1px solid #111111;
+  .bar {
+    border-top: 4px solid #101010;
+    border-bottom: 1px solid #101010;
     height: 7px;
-    margin: 8px 0 10px 0;
+    margin: 6px 0 8px 0;
   }
   /* Lead story */
-  .lead {
+  .top {
     background: #fdeeee;
-    border-top: 6px solid #a4121f;
-    padding: 10px 18px 9px 18px;
+    border-top: 7px solid #a4121f;
+    padding: 9px 18px 9px 18px;
     display: flex;
     gap: 18px;
   }
-  .lead .icon { flex: 0 0 96px; padding-top: 6px; }
-  .kicker {
+  .top .pic { flex: 0 0 108px; padding-top: 4px; }
+  .tag {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
   }
-  .lead .kicker { color: #a4121f; }
-  .lead h1 {
-    font-size: 33px;
-    line-height: 1.12;
+  .top .tag { color: #a4121f; }
+  .top h1 {
+    font-size: 35px;
+    line-height: 1.1;
     margin: 4px 0 6px 0;
   }
-  .lead p, .card p, .band p {
+  .top p, .story p, .biz p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
-    line-height: 1.32;
-    color: #2b2b2b;
+    line-height: 1.3;
+    color: #2c2c2c;
   }
-  /* Two-column grid */
-  .grid {
+  /* Four-story grid */
+  .rows {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 8px;
+    margin-top: 8px;
   }
-  .card {
+  .story {
     background: #fffdf6;
     border-top: 5px solid #1f4e79;
-    padding: 10px 16px 9px 16px;
+    padding: 8px 15px 8px 15px;
     display: flex;
-    gap: 14px;
+    gap: 13px;
   }
-  .card .icon { flex: 0 0 78px; padding-top: 4px; }
-  .card h2 {
-    font-size: 26px;
-    line-height: 1.14;
+  .story .pic { flex: 0 0 82px; padding-top: 3px; }
+  .story h2 {
+    font-size: 25px;
+    line-height: 1.13;
     margin: 3px 0 5px 0;
   }
-  .card p { font-size: 18px; line-height: 1.3; }
-  .card.c2 { border-top-color: #5b2d8e; }
-  .card.c2 .kicker { color: #5b2d8e; }
-  .card.c3 { border-top-color: #8a5a00; }
-  .card.c3 .kicker { color: #8a5a00; }
-  .card.c4 { border-top-color: #0f6b4a; }
-  .card.c4 .kicker { color: #0f6b4a; }
-  .card.c1 .kicker { color: #1f4e79; }
+  .story p { font-size: 17.5px; line-height: 1.28; }
+  .story.s2 { border-top-color: #5b2d8e; }
+  .story.s2 .tag { color: #5b2d8e; }
+  .story.s3 { border-top-color: #8a5a00; }
+  .story.s3 .tag { color: #8a5a00; }
+  .story.s4 { border-top-color: #0f6b4a; }
+  .story.s4 .tag { color: #0f6b4a; }
+  .story.s1 .tag { color: #1f4e79; }
   /* Business band */
-  .band {
+  .biz {
     background: #eef3fa;
     border-top: 5px solid #123a6d;
-    padding: 10px 18px 9px 18px;
+    padding: 8px 18px 8px 18px;
     display: flex;
-    gap: 16px;
-    margin-top: 12px;
+    gap: 15px;
+    margin-top: 9px;
   }
-  .band .icon { flex: 0 0 84px; padding-top: 4px; }
-  .band .kicker { color: #123a6d; }
-  .band h2 {
-    font-size: 29px;
-    line-height: 1.14;
+  .biz .pic { flex: 0 0 86px; padding-top: 3px; }
+  .biz .tag { color: #123a6d; }
+  .biz h2 {
+    font-size: 27px;
+    line-height: 1.13;
     margin: 3px 0 5px 0;
   }
-  .band p { font-size: 19px; line-height: 1.3; }
+  .biz p { font-size: 18px; line-height: 1.28; }
   /* Numbers strip */
-  .numbers {
-    background: #161616;
+  .stats {
+    background: #141414;
     color: #ffffff;
-    margin-top: 12px;
-    padding: 10px 10px 9px 10px;
+    margin-top: 9px;
+    padding: 8px 10px 8px 10px;
   }
-  .numbers .label {
+  .stats .head {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 4px;
     color: #e8b64c;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
-  .numbers .row {
+  .stats .cells {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .numbers .cell { text-align: center; padding: 0 8px; }
-  .numbers .cell + .cell { border-left: 1px solid #555555; }
-  .numbers .big {
+  .stats .cell { text-align: center; padding: 0 8px; }
+  .stats .cell + .cell { border-left: 1px solid #555555; }
+  .stats .num {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 31px;
-    line-height: 1.1;
+    font-size: 33px;
+    line-height: 1.08;
   }
-  .numbers .cap {
+  .stats .what {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
-    line-height: 1.25;
+    line-height: 1.22;
     color: #d8d8d8;
     margin-top: 3px;
   }
-  .footer {
+  .foot {
     margin-top: auto;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -161,130 +159,132 @@
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="masthead">THE WORLD IN ONE DAY</div>
-  <div class="dateline">THURSDAY, 19 NOVEMBER 2026</div>
-  <div class="rule-double"></div>
+<div class="sheet">
+  <div class="title">THE WORLD IN ONE DAY</div>
+  <div class="date">THURSDAY, 19 NOVEMBER 2026</div>
+  <div class="bar"></div>
 
-  <div class="lead">
-    <div class="icon">
-      <svg width="96" height="96" viewBox="0 0 96 96">
-        <circle cx="22" cy="26" r="13" fill="#a4121f"/>
-        <path d="M6 62 Q22 42 38 62 Z" fill="#a4121f"/>
-        <circle cx="48" cy="20" r="13" fill="#1f4e79"/>
-        <path d="M32 62 Q48 42 64 62 Z" fill="#1f4e79"/>
-        <circle cx="74" cy="26" r="13" fill="#8a5a00"/>
-        <path d="M58 62 Q74 42 90 62 Z" fill="#8a5a00"/>
-        <rect x="4" y="70" width="88" height="5" rx="2" fill="#333333"/>
+  <div class="top">
+    <div class="pic">
+      <svg width="108" height="108" viewBox="0 0 108 108">
+        <rect x="6" y="14" width="30" height="20" fill="#a4121f"/>
+        <rect x="6" y="14" width="30" height="20" fill="none" stroke="#7d0d18" stroke-width="2"/>
+        <rect x="39" y="14" width="30" height="20" fill="#1f4e79"/>
+        <rect x="72" y="14" width="30" height="20" fill="#c8a028"/>
+        <circle cx="21" cy="52" r="13" fill="#a4121f"/>
+        <path d="M5 92 Q21 72 37 92 Z" fill="#a4121f"/>
+        <circle cx="54" cy="46" r="13" fill="#1f4e79"/>
+        <path d="M38 92 Q54 72 70 92 Z" fill="#1f4e79"/>
+        <circle cx="87" cy="52" r="13" fill="#8a5a00"/>
+        <path d="M71 92 Q87 72 103 92 Z" fill="#8a5a00"/>
+        <rect x="4" y="99" width="100" height="5" rx="2" fill="#333333"/>
       </svg>
     </div>
     <div>
-      <div class="kicker">Diplomacy &middot; Lead Story</div>
-      <h1>Trump, Xi and Putin Hold First-Ever Three-Way Summit</h1>
-      <p>The three leaders met for 90 minutes behind closed doors in Shenzhen, on the sidelines of the APEC forum, to discuss nuclear arms control, Ukraine and Iran. China and Russia issued a &ldquo;peace declaration&rdquo; that mentioned neither. No major agreement was announced.</p>
+      <div class="tag">Diplomacy &middot; Lead Story</div>
+      <h1>Trump, Xi and Putin Hold the First-Ever Three-Way Summit</h1>
+      <p>The three leaders met for 90 minutes in Shenzhen, on the sidelines of the APEC forum, and issued a joint &ldquo;peace declaration&rdquo; on UN reform, oil supplies and nuclear risks &mdash; &ldquo;a nuclear war cannot be won.&rdquo; No breakthrough on Ukraine or Iran.</p>
     </div>
   </div>
 
-  <div class="grid">
-    <div class="card c1">
-      <div class="icon">
-        <svg width="78" height="78" viewBox="0 0 78 78">
-          <rect x="36" y="8" width="6" height="52" fill="#1f4e79"/>
-          <rect x="10" y="14" width="58" height="5" fill="#1f4e79"/>
-          <rect x="28" y="60" width="22" height="6" fill="#1f4e79"/>
-          <path d="M12 19 L6 40 L24 40 Z" fill="#a4121f"/>
-          <path d="M66 19 L60 40 L72 40 Z" fill="#a4121f"/>
-          <path d="M6 40 L24 40" stroke="#1f4e79" stroke-width="3"/>
-          <path d="M60 40 L72 40" stroke="#1f4e79" stroke-width="3"/>
-          <circle cx="39" cy="11" r="5" fill="#a4121f"/>
+  <div class="rows">
+    <div class="story s1">
+      <div class="pic">
+        <svg width="82" height="82" viewBox="0 0 82 82">
+          <rect x="38" y="10" width="6" height="54" fill="#1f4e79"/>
+          <rect x="12" y="16" width="58" height="5" fill="#1f4e79"/>
+          <rect x="30" y="64" width="22" height="6" fill="#1f4e79"/>
+          <path d="M14 21 L8 42 L26 42 Z" fill="#a4121f"/>
+          <path d="M68 21 L62 42 L74 42 Z" fill="#a4121f"/>
+          <circle cx="41" cy="12" r="5" fill="#a4121f"/>
         </svg>
       </div>
       <div>
-        <div class="kicker">Justice</div>
-        <h2>ICJ: Myanmar Committed Genocide of Rohingya</h2>
-        <p>By 9&ndash;6, the court held a state responsible for genocide for the first time in its 80-year history. About 10,000 Rohingya were killed in 2017; it ordered reparations.</p>
+        <div class="tag">Justice</div>
+        <h2>ICJ: Myanmar Committed Genocide of the Rohingya</h2>
+        <p>By 9&ndash;6, the world court held a state guilty of genocide for the first time in 80 years. About 10,000 Rohingya were killed in 2017; it ordered reparations.</p>
       </div>
     </div>
 
-    <div class="card c2">
-      <div class="icon">
-        <svg width="78" height="78" viewBox="0 0 78 78">
-          <path d="M6 52 Q20 34 39 34 Q58 34 72 52" fill="none" stroke="#5b2d8e" stroke-width="7"/>
-          <rect x="6" y="52" width="6" height="20" fill="#5b2d8e"/>
-          <rect x="66" y="52" width="6" height="20" fill="#5b2d8e"/>
-          <path d="M33 52 L39 30 L45 52" fill="none" stroke="#a4121f" stroke-width="5"/>
-          <path d="M39 30 L39 18" stroke="#a4121f" stroke-width="5"/>
+    <div class="story s2">
+      <div class="pic">
+        <svg width="82" height="82" viewBox="0 0 82 82">
+          <path d="M8 54 Q22 36 41 36 Q60 36 74 54" fill="none" stroke="#5b2d8e" stroke-width="7"/>
+          <rect x="8" y="54" width="6" height="22" fill="#5b2d8e"/>
+          <rect x="68" y="54" width="6" height="22" fill="#5b2d8e"/>
+          <path d="M41 36 L35 20 L47 20 Z" fill="#a4121f"/>
+          <path d="M41 20 L41 8" stroke="#a4121f" stroke-width="5"/>
+          <path d="M30 54 L36 44 M46 54 L52 44" stroke="#a4121f" stroke-width="4"/>
         </svg>
       </div>
       <div>
-        <div class="kicker">Ukraine</div>
-        <h2>Kerch Bridge Struck for a Third Time This Week</h2>
-        <p>Ukraine hit the Crimean bridge&rsquo;s rail section, halting train traffic. Russian strikes killed at least five people and knocked out power in five regions.</p>
+        <div class="tag">Ukraine</div>
+        <h2>Kerch Bridge Hit a Third Time in Four Days</h2>
+        <p>Neptune missiles hit the Crimean bridge&rsquo;s rail section, halting trains; one track reopened by afternoon. Putin vowed a hard response.</p>
       </div>
     </div>
 
-    <div class="card c3">
-      <div class="icon">
-        <svg width="78" height="78" viewBox="0 0 78 78">
-          <path d="M14 20 L40 8 L52 30 L28 44 Z" fill="#8a5a00"/>
-          <path d="M52 30 L64 24 L58 44 L46 46 Z" fill="#a4121f"/>
-          <path d="M8 62 Q20 54 32 62 Q44 70 56 62 Q64 58 70 62" fill="none" stroke="#1f4e79" stroke-width="5"/>
-          <path d="M8 72 Q20 64 32 72 Q44 80 56 72 Q64 68 70 72" fill="none" stroke="#1f4e79" stroke-width="5"/>
+    <div class="story s3">
+      <div class="pic">
+        <svg width="82" height="82" viewBox="0 0 82 82">
+          <path d="M16 22 L42 10 L54 32 L30 46 Z" fill="#8a5a00"/>
+          <path d="M54 32 L66 26 L60 46 L48 48 Z" fill="#a4121f"/>
+          <path d="M10 64 Q22 56 34 64 Q46 72 58 64 Q66 60 72 64" fill="none" stroke="#1f4e79" stroke-width="5"/>
+          <path d="M10 74 Q22 66 34 74 Q46 82 58 74 Q66 70 72 74" fill="none" stroke="#1f4e79" stroke-width="5"/>
         </svg>
       </div>
       <div>
-        <div class="kicker">Middle East</div>
-        <h2>Iran War Widens Across the Gulf</h2>
-        <p>The US struck Iran&rsquo;s Qeshm Island; Iran fired back at Kuwait and Bahrain, and a Houthi missile damaged Riyadh&rsquo;s Public Investment Fund Tower.</p>
+        <div class="tag">Middle East</div>
+        <h2>Iran War Spreads Across the Gulf</h2>
+        <p>After the US struck a missile site on Qeshm Island, Iran fired drones at US bases in Kuwait and Bahrain; a tanker was hit in Hormuz, one missing, eleven hurt.</p>
       </div>
     </div>
 
-    <div class="card c4">
-      <div class="icon">
-        <svg width="78" height="78" viewBox="0 0 78 78">
-          <rect x="10" y="14" width="58" height="50" rx="4" fill="#0f6b4a"/>
-          <rect x="18" y="22" width="42" height="6" fill="#ffffff"/>
-          <rect x="18" y="33" width="42" height="6" fill="#ffffff"/>
-          <rect x="18" y="44" width="26" height="6" fill="#ffffff"/>
-          <path d="M60 58 L72 70 M72 58 L60 70" stroke="#a4121f" stroke-width="6"/>
+    <div class="story s4">
+      <div class="pic">
+        <svg width="82" height="82" viewBox="0 0 82 82">
+          <path d="M41 8 L70 22 L70 46 Q70 66 41 74 Q12 66 12 46 L12 22 Z" fill="#0f6b4a"/>
+          <path d="M41 18 L47 30 L60 31 L50 40 L53 53 L41 46 L29 53 L32 40 L22 31 L35 30 Z" fill="#ffffff"/>
+          <circle cx="41" cy="62" r="3" fill="#e8b64c"/>
         </svg>
       </div>
       <div>
-        <div class="kicker">Gaza</div>
-        <h2>Israel Launches Ground Operation in Central Gaza</h2>
-        <p>Israeli forces pushed beyond the Yellow Line near Nuseirat despite the ceasefire, in a new ground operation in central Gaza.</p>
+        <div class="tag">Europe</div>
+        <h2>Berlin: Allies Rally Around Ukraine</h2>
+        <p>More than 40 partners of the Coalition of the Willing met in Berlin with Zelenskyy and US envoys Witkoff and Kushner. Kushner said Russia accepted Article 5-style guarantees; Trump called in.</p>
       </div>
     </div>
   </div>
 
-  <div class="band">
-    <div class="icon">
-      <svg width="84" height="84" viewBox="0 0 84 84">
-        <rect x="8" y="46" width="14" height="30" fill="#123a6d"/>
-        <rect x="28" y="34" width="14" height="42" fill="#1f6fb2"/>
-        <rect x="48" y="22" width="14" height="54" fill="#123a6d"/>
-        <path d="M6 26 L30 16 L52 20 L78 6" fill="none" stroke="#a4121f" stroke-width="5"/>
-        <path d="M78 6 L70 6 M78 6 L78 14" stroke="#a4121f" stroke-width="5"/>
+  <div class="biz">
+    <div class="pic">
+      <svg width="86" height="86" viewBox="0 0 86 86">
+        <rect x="8" y="48" width="14" height="30" fill="#123a6d"/>
+        <rect x="28" y="36" width="14" height="42" fill="#1f6fb2"/>
+        <rect x="48" y="24" width="14" height="54" fill="#123a6d"/>
+        <path d="M6 28 L30 18 L52 22 L80 8" fill="none" stroke="#a4121f" stroke-width="5"/>
+        <path d="M80 8 L72 8 M80 8 L80 16" stroke="#a4121f" stroke-width="5"/>
+        <circle cx="80" cy="8" r="4" fill="#a4121f"/>
       </svg>
     </div>
     <div>
-      <div class="kicker">Business</div>
+      <div class="tag">Business</div>
       <h2>Anthropic&rsquo;s $81.3 Billion IPO Is the Biggest Ever</h2>
-      <p>Anthropic raised a record $81.3 billion, priced at $83 a share for a roughly $1.5 trillion valuation, passing SpaceX&rsquo;s $75 billion record. Shares began trading on the Nasdaq as ANT on Thursday.</p>
+      <p>Priced at $83 a share for a roughly $1.5 trillion valuation, passing SpaceX&rsquo;s $75 billion record. Shares opened at $111.50 and closed at $97.17 on the Nasdaq as ANT &mdash; up 17% on day one.</p>
     </div>
   </div>
 
-  <div class="numbers">
-    <div class="label">BY THE NUMBERS</div>
-    <div class="row">
-      <div class="cell"><div class="big">3</div><div class="cap">leaders in the first-ever trilateral summit</div></div>
-      <div class="cell"><div class="big">10,000</div><div class="cap">Rohingya killed, per the ICJ ruling</div></div>
-      <div class="cell"><div class="big">$81.3B</div><div class="cap">record Anthropic IPO</div></div>
-      <div class="cell"><div class="big">100</div><div class="cap">migrants aboard a boat that sank off Senegal</div></div>
+  <div class="stats">
+    <div class="head">BY THE NUMBERS</div>
+    <div class="cells">
+      <div class="cell"><div class="num">90 MIN</div><div class="what">the first-ever trilateral summit in Shenzhen</div></div>
+      <div class="cell"><div class="num">9&ndash;6</div><div class="what">ICJ vote finding Myanmar guilty of genocide</div></div>
+      <div class="cell"><div class="num">$81.3B</div><div class="what">largest IPO in history, Anthropic</div></div>
+      <div class="cell"><div class="num">+17%</div><div class="what">ANT shares on their first day of trading</div></div>
     </div>
   </div>
 
-  <div class="footer">SIX STORIES &middot; ONE DAY &middot; 19 NOVEMBER 2026</div>
+  <div class="foot">SIX STORIES &middot; ONE DAY &middot; 19 NOVEMBER 2026</div>
 </div>
 </body>
 </html>

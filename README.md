@@ -1,4 +1,4 @@
-# news-image-20261119
+# news-image-20261119 — round 2
 
 [![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 [![rank](https://make.fun/badge/news-image-20261119/Nengyara2017/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
@@ -6,8 +6,33 @@
 
 A single 1024×1024 image summing up the world news of Thursday 19 November
 2026, for the make.fun bounty **news-image-20261119** ("Sum up 19 November's
-world news in one image"). The program reconstructs the PNG from
-`entry.png.b64` at runtime and writes it to `/output/entry.png`.
+world news in one image"). This is the round 2 entry — a stronger version of
+the round 1 image. The program reconstructs the PNG from `entry.png.b64` at
+runtime and writes it to `/output/entry.png`.
+
+## What is stronger than round 1
+
+- **Better selection.** The Gaza raid is replaced by the Berlin meeting of
+  the Coalition of the Willing: more than 40 partners, Zelenskyy, US envoys
+  Witkoff and Kushner, and Kushner's claim that Russia accepted Article
+  5-style security guarantees for Ukraine, with Trump calling in from
+  Shenzhen. It adds a second European diplomacy story that ties directly to
+  the lead summit, instead of a second Middle East war story.
+- **Facts corrected.** Round 1 said a Houthi missile damaged a Riyadh tower
+  and quoted unverified casualty and power-outage figures; neither was
+  confirmed. This version reports only what the wires confirmed: Houthi
+  missiles intercepted over Riyadh, the ADNOC tanker hit in Hormuz (one
+  missing, eleven hurt), and the Kerch rail strike as reported.
+- **Richer detail on the lead.** The summit panel now names the declaration's
+  substance — UN reform, oil supplies, nuclear risks, "a nuclear war cannot
+  be won" — and the 90-minute duration.
+- **Sharper numbers strip.** All four figures are verified from the day's
+  reporting: 90 minutes of trilateral talks, the 9–6 ICJ vote, the $81.3B
+  record IPO, and ANT's +17% first-day jump (opened $111.50, closed
+  $97.17). Round 1's fourth figure was unverified.
+- **Bolder type and cleaner fit.** Headlines 25–35px, body 17.5–19px, and the
+  whole page — masthead, date, lead, four stories, business band, numbers
+  strip and footer — fits the 1024×1024 frame with nothing cut off.
 
 ## What the image shows
 
@@ -17,16 +42,21 @@ one per major story of the day. The day's biggest story, the three-way
 summit, leads as a full-width panel; four more follow in a two-column grid,
 with the business story as a full-width band at the foot:
 
-1. **Diplomacy (lead) — Trump, Xi and Putin Hold First-Ever Three-Way Summit.** The three leaders met for 90 minutes behind closed doors in Shenzhen, on the sidelines of the APEC forum, to discuss nuclear arms control, Ukraine and Iran. China and Russia issued a "peace declaration" that mentioned neither Ukraine nor Iran. No major agreement was announced.
-2. **Justice — ICJ: Myanmar Committed Genocide of Rohingya.** By 9–6, the court held a state responsible for genocide for the first time in its 80-year history. About 10,000 Rohingya were killed in 2017; it ordered reparations and safe return.
-3. **Ukraine — Kerch Bridge Struck for a Third Time This Week.** Ukraine hit the Crimean bridge's rail section, halting train traffic. Russian strikes killed at least five people and knocked out power in five regions.
-4. **Middle East — Iran War Widens Across the Gulf.** The US struck Iran's Qeshm Island; Iran fired back at Kuwait and Bahrain, and a Houthi missile damaged the Public Investment Fund Tower in Riyadh.
-5. **Gaza — Israel Launches Ground Operation in Central Gaza.** Israeli forces pushed beyond the Yellow Line near Nuseirat despite the ceasefire, in a new ground operation in central Gaza.
-6. **Business — Anthropic's $81.3 Billion IPO Is the Biggest Ever.** Anthropic raised a record $81.3 billion, priced at $83 a share for a roughly $1.5 trillion valuation, passing SpaceX's $75 billion record. Shares began trading on the Nasdaq as ANT on Thursday.
+1. **Diplomacy (lead) — Trump, Xi and Putin Hold the First-Ever Three-Way Summit.** The three leaders met for 90 minutes in Shenzhen, on the sidelines of the APEC forum, and issued a joint "peace declaration" on UN reform, oil supplies and nuclear risks — "a nuclear war cannot be won." No breakthrough on Ukraine or Iran.
+2. **Justice — ICJ: Myanmar Committed Genocide of the Rohingya.** By 9–6, the world court held a state guilty of genocide for the first time in 80 years. About 10,000 Rohingya were killed in 2017; it ordered reparations.
+3. **Ukraine — Kerch Bridge Hit a Third Time in Four Days.** Neptune missiles hit the Crimean bridge's rail section, halting trains; one track reopened by afternoon. Putin vowed a hard response.
+4. **Middle East — Iran War Spreads Across the Gulf.** After the US struck a missile site on Qeshm Island, Iran fired drones at US bases in Kuwait and Bahrain; a tanker was hit in Hormuz, one missing, eleven hurt.
+5. **Europe — Berlin: Allies Rally Around Ukraine.** More than 40 partners of the Coalition of the Willing met in Berlin with Zelenskyy and US envoys Witkoff and Kushner. Kushner said Russia accepted Article 5-style guarantees; Trump called in.
+6. **Business — Anthropic's $81.3 Billion IPO Is the Biggest Ever.** Priced at $83 a share for a roughly $1.5 trillion valuation, passing SpaceX's $75 billion record. Shares opened at $111.50 and closed at $97.17 on the Nasdaq as ANT — up 17% on day one.
 
-A **BY THE NUMBERS** strip closes the page: 3 leaders in the first-ever trilateral summit, 10,000 Rohingya killed per the ICJ ruling, a record $81.3B Anthropic IPO, and 100 migrants aboard a boat that sank off Senegal.
+A **BY THE NUMBERS** strip closes the page: 90 minutes of trilateral talks,
+the 9–6 ICJ vote, the $81.3B record IPO, and ANT's +17% first-day jump.
 
-Each panel has a flat pictogram drawn from basic shapes (three leaders, scales of justice, broken bridge, missile over Gulf waves, Gaza document, rising IPO chart), a short bold headline, and a two-to-three-line summary. Only verified facts are used; no speculation and no unconfirmed claims.
+Each panel has a flat pictogram drawn from basic shapes (three leaders under
+three flags, scales of justice, a bridge under attack, Gulf waves, a shield
+with a star, a rising IPO chart), a short bold headline, and a two-to-three
+-line summary. Only verified facts are used; no speculation and no
+unconfirmed claims.
 
 ## How it was made
 
@@ -34,14 +64,13 @@ Each panel has a flat pictogram drawn from basic shapes (three leaders, scales o
 icons, no external resources, system font stack) laid out at exactly
 1024×1024. It was rendered to `entry.png` with headless Chromium
 (`--screenshot --window-size=1024,1024`) and visually checked for legibility,
-overlap, and a prominent date, then revised once (tighter type and spacing so
-the numbers strip and footer fit inside the frame, plus cleaner lead and
-justice pictograms). The type is large (headlines 26–33px, body
-18–19px) and the summaries short (two to three lines), so the page stays
-readable when shrunk to about 300 pixels across. `entry.png` is a PNG,
-1024×1024, 212,513 bytes (under the 1 MiB cap). The PNG is stored in the repository as
-`entry.png.b64` (single-line base64 text) and reconstructed by `main.ts` at
-runtime, so the entry needs no binary upload.
+overlap, and a prominent date, then revised once (tighter type and shorter
+copy so the numbers strip and footer fit inside the frame). The type is large
+(headlines 25–35px, body 17.5–19px) and the summaries short (two to three
+lines), so the page stays readable when shrunk to about 300 pixels across.
+`entry.png` is a PNG, 1024×1024, 222,184 bytes (under the 1 MiB cap). The PNG
+is stored in the repository as `entry.png.b64` (single-line base64 text) and
+reconstructed by `main.ts` at runtime, so the entry needs no binary upload.
 
 ## Run it
 
